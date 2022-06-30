@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll1"
+        android:orientation="horizontal"
+        android:weightSum="10.5"
+        android:background="@color/design_default_color_secondary_variant">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.4"
+            android:id="@+id/txtlable1"
+            android:text="ATM Amount"
+            />
+
+        <View android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:id="@+id/txtlable100"
+            android:text="Rs. 100"
+            />
+
+        <View android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:id="@+id/txtlable200"
+            android:text="Rs. 200"
+            />
+
+        <View android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:id="@+id/txtlable500"
+            android:text="Rs. 500"
+            />
+
+        <View android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:id="@+id/txtlable2000"
+            android:text="Rs. 2000"
+            />
+
+        <View android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll2"
+        android:layout_below="@id/ll1"
+        android:orientation="horizontal"
+        android:weightSum="10.5"
+        android:background="@color/design_default_color_primary_variant">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.4"
+            android:id="@+id/txtlable2"
+            android:textColor="@color/white"
+            android:text="20000"
+            />
+
+        <View android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:id="@+id/txtamount100"
+            android:textColor="@color/white"
+            android:text="20"
+            />
+
+        <View android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:textColor="@color/white"
+            android:id="@+id/txtamount200"
+            android:text="20"
+            />
+
+        <View android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:textColor="@color/white"
+            android:id="@+id/txtamount500"
+            android:text="12"
+            />
+
+        <View android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:textColor="@color/white"
+            android:id="@+id/txtamount2000"
+            android:text="4"
+            />
+
+        <View android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll2"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:hint="Enter your Withdrawl Amount" />
+
+    <Button
+        android:id="@+id/btnWithdraw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtAmount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:background="@color/material_dynamic_primary50"
+        android:text="Withdraw" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll3"
+        android:layout_below="@id/btnWithdraw"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:weightSum="10.5"
+        android:background="@color/design_default_color_secondary_variant">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.4"
+            android:id="@+id/txtlable3"
+            android:textColor="@color/white"
+            android:text="Withdrawl Amount"
+            />
+
+        <View android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:id="@+id/txt2label100"
+            android:textColor="@color/white"
+            android:text="Rs. 100"
+            />
+
+        <View android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:textColor="@color/white"
+            android:id="@+id/txt2label200"
+            android:text="Rs. 200"
+            />
+
+        <View android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:textColor="@color/white"
+            android:id="@+id/txt2label500"
+            android:text="Rs. 500"
+            />
+
+        <View android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:textColor="@color/white"
+            android:id="@+id/txt2label2000"
+            android:text="Rs. 2000"
+            />
+
+        <View android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll4"
+        android:layout_below="@id/ll3"
+        android:orientation="horizontal"
+        android:weightSum="10.5"
+        android:background="@color/design_default_color_primary_variant">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.4"
+            android:id="@+id/txtlable4"
+            android:textColor="@color/white"
+            android:text=""
+            />
+
+        <View android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:id="@+id/txt2amount100"
+            android:textColor="@color/white"
+            android:text="Rs. 100"
+            />
+
+        <View android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:textColor="@color/white"
+            android:id="@+id/txt2amount200"
+            android:text="Rs. 200"
+            />
+
+        <View android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:textColor="@color/white"
+            android:id="@+id/txt2amount500"
+            android:text="Rs. 500"
+            />
+
+        <View android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:textColor="@color/white"
+            android:id="@+id/txt2amount2000"
+            android:text="Rs. 2000"
+            />
+
+        <View android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txttransactionlabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll4"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="Your Current Transaction" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll5"
+        android:visibility="gone"
+        android:layout_below="@id/txttransactionlabel"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="10.5"
+        android:background="@color/design_default_color_secondary_variant">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.4"
+            android:id="@+id/txtlable5"
+            android:textColor="@color/white"
+            android:text="Withdrawl Amount"
+            />
+
+        <View android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:id="@+id/txt3label100"
+            android:textColor="@color/white"
+            android:text="Rs. 100"
+            />
+
+        <View android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:textColor="@color/white"
+            android:id="@+id/txt3label200"
+            android:text="Rs. 200"
+            />
+
+        <View android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:textColor="@color/white"
+            android:id="@+id/txt3label500"
+            android:text="Rs. 500"
+            />
+
+        <View android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:textColor="@color/white"
+            android:id="@+id/txt3label2000"
+            android:text="Rs. 2000"
+            />
+
+        <View android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txttransactionhistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll5"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Your Transaction History" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txttransactionhistory"/>
+
+</RelativeLayout>
